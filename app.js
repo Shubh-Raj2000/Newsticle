@@ -19,19 +19,7 @@ app.set("view engine", "ejs");
 const newsRouter = require("./src/routes/news");
 app.use("/", newsRouter);
 
-
-
-
-
-
-
-
-
-
-
-
-
 // Listening on port 3000
-app.listen(3000, function(req, res) {
+app.listen((process.env.PORT || 3000), function(req, res) {
   console.log("Server is running at port 3000.");
 });

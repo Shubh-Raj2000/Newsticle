@@ -38,11 +38,16 @@ h2 { font-size: 1.6rem; }
             cursor: pointer;
         }
     }
-}
 
-.header__logo {
-  text-decoration: none;
-  color: white;
+    &__logo {
+      padding-right: 10px;
+      text-decoration: none;
+      color: white;
+    }
+
+    &__text {
+      text-align: center;
+    }
 }
 
 .wrapper { padding: 0 2rem }
@@ -70,4 +75,17 @@ h2 { font-size: 1.6rem; }
     max-width: 1300px;
     margin: 0 auto;
     padding: 2rem;
+}
+
+.foot {
+  margin-top: 20px;
+  background-color: #6DB4F5;
+  padding: 50px 0 50px;
+  text-align: center;
+  color: #EAF6F6;
+}
+
+.mailId {
+  text-decoration: none;
+  color: #EAF6F6;
 }

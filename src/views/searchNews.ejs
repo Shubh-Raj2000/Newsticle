@@ -1,0 +1,20 @@
+<%- include('partials/header'); -%>
+
+    <header class="header">
+        <div><a href="/" class="header__logo">Newsticle</a></div>
+        <%- include('./partials/search.ejs') %>
+    </header>
+
+    <div class="wrapper">
+        <div class="news">
+            <% articles.forEach(function(article, index) { %>
+                <a href="<%- article.url %>" class="news__card">
+                    <img src="<%- article.urlToImage %>" alt="<%- article.title %>">
+                    <h2><%- article.title %></h2>
+                    <p><%- article.description %></p>
+                </a>
+            <% }) %>
+        </div>
+    </div>
+
+<%- include('partials/footer'); -%>
